@@ -1,10 +1,11 @@
 CC=gcc
-CFLAGS=-g -I. #-O2
+CFLAGS=-g -I. -O2
 ASFLAGS=-g
 
 EXE=test
 
-OBJS=test.o sse.o sse-clear.o avx.o avx2.o avx-clear.o
+OBJS=test.o sse.o sse-clear.o sse-clear2.o avx.o avx2.o avx-clear.o \
+     avx-clear2.o
 
 all: $(EXE)
 	./$(EXE)
